@@ -15,6 +15,18 @@ This skill gives the agent a small, opinionated command policy:
 
 The result is less shell-specific improvisation and fewer failures caused by aliases, quoting, locale, executable-name collisions, or fragile one-liners.
 
+## Use Cases
+
+Windows Scoop Tools is useful when Codex or another AI coding agent needs to perform coding and repository work from Windows PowerShell, including:
+
+- Inspecting repositories with predictable search and file-reading commands before making changes
+- Reviewing pull requests with `rg`, `bat`, and `delta` instead of fragile shell pipelines
+- Triaging issues by searching logs, configuration files, package metadata, and source code
+- Preparing releases with reliable archive, download, GitHub CLI, and diff commands
+- Reading and transforming JSON or YAML configuration with `jq` and `yq`
+- Avoiding command-name collisions such as `curl`, `find`, and `sort` by calling the intended executable explicitly
+- Replacing complex PowerShell object pipelines with small Node `.mjs` scripts when structured processing is needed
+
 ## What It Covers
 
 The skill defines preferred commands for:
