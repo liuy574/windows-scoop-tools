@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windows Scoop Tools"
+  short_description: "Prefer Scoop Unix-style CLI tools on Windows PowerShell."
+  default_prompt: "Use Windows Scoop Tools for PowerShell command selection."
